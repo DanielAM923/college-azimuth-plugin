@@ -1,0 +1,22 @@
+{
+  "name": "college-azimuth",
+  "displayName": "College Cost Calculator by College Azimuth",
+  "version": "1.0.0",
+  "description": "Check whether a college is affordable under the federal loan rules in force since July 1, 2026: what a student or parent would owe, the 10-year payment, and how much of their pay above basic expenses it takes, from College Scorecard data.",
+  "author": {
+    "name": "Azimuth Analysis LLC",
+    "url": "https://collegeazimuth.com"
+  },
+  "homepage": "https://collegeazimuth.com",
+  "license": "MIT",
+  "keywords": [
+    "college cost calculator",
+    "student loan calculator",
+    "Parent PLUS",
+    "award letter",
+    "college affordability",
+    "financial aid",
+    "College Scorecard",
+    "RAP"
+  ]
+}
