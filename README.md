@@ -1,6 +1,6 @@
 # College Cost Calculator by College Azimuth
 
-Can you afford the college you're considering? This plugin lets Claude answer that with real numbers. It uses College Azimuth's Financial GPS and the federal student loan rules in force since July 1, 2026.
+Can you afford the college you're considering? This plugin lets Claude answer that with real numbers, using the Financial GPS from [College Azimuth](https://collegeazimuth.com/) and the federal student loan rules in force since July 1, 2026.
 
 For a school and a field of study, it works out:
 - what a student would owe when repayment starts;
@@ -9,7 +9,9 @@ For a school and a field of study, it works out:
 
 The share comes with a plain label: Excellent, Good, Concerning or High risk. Parents get the same check for Parent PLUS on a stricter scale (Safe, Caution, High pressure), plus what the standard plan would actually bill, and at what ages.
 
-The figures come from College Scorecard data served by College Azimuth, and from the current federal rates. College Azimuth's site runs the same rules on its [Financial GPS tools](https://collegeazimuth.com/financial-gps/).
+The figures come from College Scorecard data served by College Azimuth, and from the current federal rates. Claude doesn't do the math. The server computes every result in code, with the same rules as the [Financial GPS](https://collegeazimuth.com/financial-gps/) on College Azimuth's website, so the results are deterministic: the same school and inputs give the same numbers every time. Claude's job is to explain them.
+
+One difference: for Parent PLUS, Claude assumes payments are put off until six months after the student leaves school, with interest building in the meantime. The website's Financial GPS starts them when each loan is paid out, though its parent check lets you defer them instead. Both are federal options, and they give different monthly payments. Figures built from a school's median debt are the same in both.
 
 ## What's in it
 
@@ -80,6 +82,17 @@ It's intended for adults (18+): students and parents using Claude to plan for co
 - **Local living costs:** the basic-expense allowance is a national figure.
 - **Salaries by city, career paths and rankings.**
 - **Graduate and professional programs.**
+
+## About College Azimuth
+
+[College Azimuth](https://collegeazimuth.com/) is a free, independent research site showing what each college costs after aid, what graduates earn and who it serves. No account is needed to read it.
+
+- [Financial GPS](https://collegeazimuth.com/financial-gps/): the web version of this plugin's checks, on the same rules apart from the Parent PLUS timing above.
+- [AI tools](https://collegeazimuth.com/ai-tools/): the College Cost Calculator for AI assistants, with setup help.
+- [Rankings](https://collegeazimuth.com/rankings/): colleges by program, state and region.
+- [Data Hub](https://collegeazimuth.com/explore/): every ranking list and data tool in one place.
+- [Methodology](https://collegeazimuth.com/methodology/): the ranking pillars, earnings cohorts, data sources and limitations.
+- [Numbers and Narratives](https://collegeazimuth.com/analysis/): analysis of college costs, graduate earnings, debt and economic mobility.
 
 ## Support
 
